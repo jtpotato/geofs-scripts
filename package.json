@@ -1,0 +1,14 @@
+{
+  "name": "geofs-scripts",
+  "version": "1.0.0",
+  "main": "GeoFS Autospoilers.user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@geps/geofs-types": "^1.0.1"
+  }
+}
