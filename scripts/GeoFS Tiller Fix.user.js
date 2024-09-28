@@ -16,9 +16,9 @@
       geofs.aircraft.instance.groundSpeed > 10
     ) {
       // console.log(controls.yaw);
-      if (Math.abs(controls.yaw) > 2 / geofs.aircraft.instance.groundSpeed) {
+      if (Math.abs(controls.yaw) > 4 / geofs.aircraft.instance.groundSpeed) {
         controls.yaw =
-          (2 / geofs.aircraft.instance.groundSpeed) * Math.sign(controls.yaw);
+          (4 / geofs.aircraft.instance.groundSpeed) * Math.sign(controls.yaw);
       }
     }
   }, 6); // somewhat faster than framerate will be ok
