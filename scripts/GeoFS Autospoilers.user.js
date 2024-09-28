@@ -5,7 +5,7 @@
 // @grant       none                  // No special privileges are requested
 // @version     1.0                   // Current version of the script
 // @author      jtpotato              // Author of the script
-// @description Automatically arm spoilers. // Description and date of creation
+// @description Automatically arm spoilers, disables autopilot on touchdown and sets throttle to 0. // Description and date of creation
 // ==/UserScript==
 
 // Importing types for TypeScript support
@@ -123,7 +123,8 @@ async function autospoilers() {
     ) {
       controls.setters.setAirbrakes.set(); // Toggle airbrakes
       geofs.aircraft.instance.animationValue.spoilerArming = 0; // Reset spoiler arming
-      geofs.autopilot.setSpeed(0); // Set autopilot speed to zero
+      geofs.autopilot.turnOff();
+      geofs.aircraft.instance.engine.rpm = 1000; // Set throttle to 0
     }
   }, 100); // Run this check every 100 milliseconds
 
