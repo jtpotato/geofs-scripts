@@ -57,7 +57,10 @@
 
   // if the class "geofs-uiNone" is active on body, hide the crosshair. poll every 100ms
   const hideCrosshair = () => {
-    if (document.body.classList.contains("geofs-uiNone")) {
+    if (
+      document.body.classList.contains("geofs-uiMinimalistic") ||
+      document.body.classList.contains("geofs-uiNone")
+    ) {
       crosshair.style.display = "none";
     } else {
       crosshair.style.display = "block";

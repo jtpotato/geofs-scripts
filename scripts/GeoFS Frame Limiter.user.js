@@ -11,8 +11,10 @@
 // when the window is not visible/focused, set frame limiter.
 
 function setFrameLimiter() {
-  geofs.api.viewer.targetFrameRate = 1;
-  console.log("[GeoFS Frame Limiter] Frame limiter set to 1 frame per second.");
+  geofs.api.viewer.targetFrameRate = 10;
+  console.log(
+    "[GeoFS Frame Limiter] Frame limiter set to 10 frames per second."
+  );
 }
 function unsetFrameLimiter() {
   geofs.api.viewer.targetFrameRate = undefined;

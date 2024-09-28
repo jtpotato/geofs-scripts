@@ -21,5 +21,5 @@
 
 ### GeoFS Frame Limiter
 
-- When flying long-haul or doing something else instead of focusing on the GeoFS window, this script limits the framerate to 1fps when the game is not in focus.
+- When flying long-haul or doing something else instead of focusing on the GeoFS window, this script limits the framerate to 10 fps when the game is not in focus.
 - FPS is uncapped otherwise.
