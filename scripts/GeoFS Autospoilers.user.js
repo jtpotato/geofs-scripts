@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        GeoFS Autospoilers  // Name of the user script
-// @namespace   GeoFS                 // Namespace identifier for the script
-// @match       *://*.geo-fs.com/*    // Specifies the websites the script applies to
-// @grant       none                  // No special privileges are requested
-// @version     1.0                   // Current version of the script
-// @author      jtpotato              // Author of the script
-// @description Automatically arm spoilers, disables autopilot on touchdown and sets throttle to 0. // Description and date of creation
+// @name        GeoFS Autospoilers
+// @namespace   GeoFS
+// @match       *://*.geo-fs.com/*
+// @grant       none
+// @version     1.0
+// @author      jtpotato
+// @description Automatically arm spoilers, disables autopilot on touchdown and sets throttle to 0.
 // ==/UserScript==
 
 // Importing types for TypeScript support
