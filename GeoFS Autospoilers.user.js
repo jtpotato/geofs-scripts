@@ -48,7 +48,7 @@ async function autospoilers() {
   await waitForInstance(); // Wait for the aircraft instance to be ready
 
   // Show a notification about the new spoiler arming key
-  ui.notification.show("Note: spoiler arming key has now changed to Z.");
+  ui.notification.show("Note: spoiler arming key has now changed to Shift.");
 
   // Initialize the spoiler arming status
   geofs.aircraft.instance.animationValue.spoilerArming = 0;
@@ -106,8 +106,8 @@ async function autospoilers() {
 
   // Event listener for keyboard events
   $(document).keydown(function (e) {
-    if (e.which === 90) {
-      // Check if the "Z" key is pressed
+    if (e.which === 16) {
+      // Check if the "Shift" key is pressed
       console.log("Toggled Arming Spoilers"); // Log the action
       controls.setters.setSpoilerArming.set(); // Execute the toggle function
     }
