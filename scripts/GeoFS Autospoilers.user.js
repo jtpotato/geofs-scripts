@@ -123,8 +123,8 @@ async function autospoilers() {
     ) {
       controls.setters.setAirbrakes.set(); // Toggle airbrakes
       geofs.aircraft.instance.animationValue.spoilerArming = 0; // Reset spoiler arming
+      geofs.autopilot.setSpeed(0);
       geofs.autopilot.turnOff();
-      geofs.aircraft.instance.engine.rpm = 1000; // Set throttle to 0
     }
   }, 100); // Run this check every 100 milliseconds
 
