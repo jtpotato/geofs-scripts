@@ -5,7 +5,7 @@
 // @grant       none                  // No special privileges are requested
 // @version     1.0                   // Current version of the script
 // @author      jtpotato              // Author of the script
-// @description 26/09/2024, 19:58:16 // Description and date of creation
+// @description Automatically arm spoilers. // Description and date of creation
 // ==/UserScript==
 
 // Importing types for TypeScript support
