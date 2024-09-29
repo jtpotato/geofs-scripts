@@ -1,6 +1,6 @@
 # jtpotato's GeoFS Scripts
 
-**Designed for use through Tampermonkey/Greasemonkey/Violentmonkey.**
+**Designed for use through Tampermonkey/Greasemonkey/Violentmonkey.** There are so many YouTube tutorials for this... please...
 
 ## Scripts Included
 
