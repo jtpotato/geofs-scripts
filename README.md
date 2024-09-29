@@ -31,8 +31,7 @@ _Suggestion: Engage autoland/ILS approach, then arm spoilers and ensure mouse co
 
 ## Stuff I have planned
 
-- Notifications when waypoints are reached
-- Radioaltimiter callouts for descent
+- System notifications when waypoints are reached
 
 ---
 
