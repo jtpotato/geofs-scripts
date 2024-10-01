@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        GeoFS Autospoilers
+// @name        GeoFS Autoland
 // @namespace   GeoFS
 // @match       *://*.geo-fs.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      jtpotato
-// @description Automatically arm spoilers, disables autopilot on touchdown and sets throttle to 0.
+// @description Enhances built-in autoland: Automatically arm spoilers, disables autopilot, activates reverse thrust on touchdown
 // ==/UserScript==
 
 // Importing types for TypeScript support
@@ -118,15 +118,17 @@ async function autospoilers() {
     // Check if spoilers are armed and the aircraft is on the ground
     if (
       geofs.aircraft.instance.animationValue.spoilerArming === 1 &&
-      geofs.aircraft.instance.groundContact &&
-      controls.airbrakes.position === 0
+      geofs.aircraft.instance.groundContact
     ) {
-      controls.setters.setAirbrakes.set(); // Toggle airbrakes
+      if (controls.airbrakes.position === 0) {
+        controls.setters.setAirbrakes.set(); // Toggle airbrakes
+      }
       geofs.aircraft.instance.animationValue.spoilerArming = 0; // Reset spoiler arming
       geofs.autopilot.setSpeed(0);
       setTimeout(() => {
         geofs.autopilot.turnOff();
       }, 200);
+      controls.setters.fullReverse.set();
     }
   }, 100); // Run this check every 100 milliseconds
 

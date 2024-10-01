@@ -9,8 +9,30 @@
 // ==/UserScript==
 
 // approximate fuel spent using engine RPM.
+/**
+ * @typedef {Object} GeoFSFuel
+ * @property {number} currentFuel - The current amount of fuel in the aircraft.
+ * @property {any} fuelData - An array of fuel data fetched from the remote JSON source.
+ */
 
-window.geofsFuel = {};
-window.geofsFuel.currentFuel = 0;
+/** @type {GeoFSFuel} */
+const geofsFuel = {
+  currentFuel: 0,
+  fuelData: null,
+};
 
-setTimeout(function () {}, 1000);
+// fetch JSON data from
+// https://raw.githubusercontent.com/jtpotato/geofs-scripts/refs/heads/main/data/fuel.json
+
+async function fetchFuelData() {
+  geofsFuel.fuelData = await fetch(
+    "https://raw.githubusercontent.com/jtpotato/geofs-scripts/refs/heads/main/data/fuel.json"
+  ).then((response) => response.json());
+}
+
+// Call the fetch function
+fetchFuelData();
+
+setTimeout(function () {
+  const engineRPM = geofs.aircraft.instance.engine.rpm;
+}, 1000);
