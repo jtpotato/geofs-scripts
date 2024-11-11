@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        GeoFS Autoland
+// @name        GeoFS Autoland++
 // @namespace   GeoFS
 // @match       *://*.geo-fs.com/*
 // @grant       none
