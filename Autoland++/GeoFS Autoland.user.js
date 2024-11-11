@@ -3,7 +3,7 @@
 // @namespace   GeoFS
 // @match       *://*.geo-fs.com/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      jtpotato
 // @description Enhances built-in autoland: Automatically arm spoilers, disables autopilot, activates reverse thrust on touchdown
 // ==/UserScript==

@@ -59,7 +59,8 @@
   const hideCrosshair = () => {
     if (
       document.body.classList.contains("geofs-uiMinimalistic") ||
-      document.body.classList.contains("geofs-uiNone")
+      document.body.classList.contains("geofs-uiNone") ||
+      geofs.autopilot.on
     ) {
       crosshair.style.display = "none";
     } else {
