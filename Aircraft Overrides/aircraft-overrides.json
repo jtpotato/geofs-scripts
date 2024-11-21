@@ -1,0 +1,49 @@
+{
+  "3180": {
+    "flapsSteps": 9,
+    "flapsPositions": [0, 0.133, 0.667, 1.333, 2, 2.267, 2.4, 2.667, 3.333, 4],
+    "autopilot": {
+      "pitchAnglePID": [0.002, 0.001, 0.01],
+      "elevatorPitchPID": [0.05, 0.0001, 0.0000001],
+      "bankAnglePID": [0.4, 0.002, 0.04],
+      "aileronsRollPID": [0.4, 0.001, 0.04],
+      "maxBankAngle": 30,
+      "throttlePID": [0.1, 0, 0]
+    },
+    "minimumSpeed": 180,
+    "tensorFactor": 0.06,
+    "parts": {
+      "l_aileron": {
+        "area": 14,
+        "points": {
+          "forceSourcePoint": [-20, 0, 0]
+        }
+      },
+      "r_aileron": {
+        "area": 14,
+        "points": {
+          "forceSourcePoint": [20, 0, 0]
+        }
+      },
+      "elevator1": {
+        "area": 12
+      },
+      "elevator2": {
+        "area": 12
+      },
+      "rudder": {
+        "area": 8
+      },
+      "leftwing": {
+        "points": {
+          "forceSourcePoint": [11, 5, 1]
+        }
+      },
+      "rightwing": {
+        "points": {
+          "forceSourcePoint": [-11, 5, 1]
+        }
+      }
+    }
+  }
+}
