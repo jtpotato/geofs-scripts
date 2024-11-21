@@ -16,13 +16,13 @@
       "l_aileron": {
         "area": 14,
         "points": {
-          "forceSourcePoint": [-20, 0, 0]
+          "forceSourcePoint": [20, 0, 0]
         }
       },
       "r_aileron": {
         "area": 14,
         "points": {
-          "forceSourcePoint": [20, 0, 0]
+          "forceSourcePoint": [-20, 0, 0]
         }
       },
       "elevator1": {
